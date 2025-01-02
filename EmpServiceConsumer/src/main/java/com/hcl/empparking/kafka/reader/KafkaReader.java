@@ -45,11 +45,12 @@ public class KafkaReader {
 	public void consume(ConsumerRecord<String, Allotment> message) throws JsonProcessingException {
 		log.info("msg consumed" + message);
 		ObjectMapper mapper = new ObjectMapper();
-		JsonNode node = null;
-		node = mapper.readTree(message.value().toString());
+		JsonNode node = mapper.readTree(message.value().toString());
 		String allotment = mapper.writeValueAsString(node);
 		Allotment value = mapper.readValue(allotment, Allotment.class);
 		log.info("bill dto : " + value);
+		
+		
 		
 //		
 //		try {

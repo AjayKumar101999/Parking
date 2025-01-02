@@ -18,5 +18,4 @@ public class Allotment {
 	private Long empId;
 	private String status;
 	private LocalDate date;
-
 }

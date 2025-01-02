@@ -15,5 +15,6 @@ public class EmpParkingApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmpParkingApplication.class, args);
 	}
+	
 
 }

@@ -6,20 +6,27 @@ spring:
 
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: root
+    password: Ajaymysql
     url: jdbc:mysql://localhost:3306/employeeparking
     username: root
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
   kafka:
     producer:
       bootstrap-servers:
       - localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-        
+
+
+      
+     
     
 springdoc:
   swagger-ui:

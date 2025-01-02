@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class AllotmentsDto {
 
-	@Min(10000)
+	@Min(1000)
 	private Long empId;
 
 }

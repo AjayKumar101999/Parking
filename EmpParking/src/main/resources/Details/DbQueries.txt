@@ -1,0 +1,33 @@
+use employeeparking;
+-- =====================================================================
+select * from employee;
+insert into employee (emp_id, email, emp_name, password)
+values (3216, 'prakashkumar@gmail.com', 'Prakash Kumar', 'prakash321');
+
+insert into employee (emp_id, email, emp_name, password)
+values (3217, 'pritikumari@gmail.com', 'Priti Kumari', 'priti3217');
+
+
+insert into employee (emp_id, email, emp_name, password)
+values (3218, 'ankushkumar@gmail.com', 'Ankush Kumar', 'ankush328');
+
+-- =====================================================================
+select * from parking_spots;
+
+insert into parking_spots (from_date, to_date, parking_id, parking_status)
+values ('2025-01-01', '2025-01-05', 12, 'Not_Available');
+
+insert into parking_spots (from_date, to_date, parking_id, parking_status)
+values ('2025-01-06', '2025-01-07', 13, 'Available');
+
+-- ==================================================================
+select * from emp_parking;
+insert into emp_parking (emp_id, id, parking_id)
+values (3216, 32, 12);
+insert into emp_parking (emp_id, id, parking_id)
+values (3217, 33, 13);
+
+-- =======================================================
+
+
+

@@ -9,8 +9,8 @@ import com.hcl.empparking.entity.ParkingSpots;
 
 @Repository
 public interface ParkingSpotsRepo extends JpaRepository<ParkingSpots, String> {
-	public Optional<ParkingSpots> findByEmpId(Long empId);
+	public Optional<ParkingSpots> findByParkingId(String parkingId);
 
-	public boolean existsByEmpId(Long empId);
+	public boolean existsByParkingId(String parkingId);
 
 }

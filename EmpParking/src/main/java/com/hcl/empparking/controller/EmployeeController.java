@@ -27,12 +27,12 @@ public class EmployeeController {
 	private final EmployeeService empService;
 
 	/**
-	 * this method will create parking request details in database
+	 * This method will create parking request details in database
 	 * 
-	 * @param EmployeeSwipeDto which contain the information of EmployeeSwipe data.
+	 * @param AllotmentsDto which contain the information of empId data.
 	 * @return
 	 */
-	@Operation(summary = " API to insert Employee swipe details in database")
+	@Operation(summary = " API to insert parking request details in database")
 	@PostMapping("/emp-parkings")
 	public ResponseEntity<ApiResponse> requestParkingSpot(@Valid @RequestBody AllotmentsDto allotmentsDto) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(empService.applySpot(allotmentsDto));

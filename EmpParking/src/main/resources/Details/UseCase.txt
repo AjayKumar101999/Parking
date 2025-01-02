@@ -1,0 +1,13 @@
+Use case to request for a parking spot in a company parking area.
+=================================================================
+
+1. There is Limited Parking Spot and each spot already assigned to company employee. 
+2. Only those employee can raise parking request who not assigned with parking spot.
+3. Parking spot will be assigned temporarily when a employee (who have parking spot)  will be on leave or not coming to office for some days.
+4. Requests can be raise 1 day before only (till 12pm of current date only).
+5. Request will be for only one day parking.
+4. A report will be generated on the morning (6 am), i.e. which employee assigned with which parking spot, if available spots are there.
+
+
+Note :
+Vehicle type - Four wheeler only

@@ -9,7 +9,7 @@ import com.hcl.empparking.enums.AllotmentStatus;
 public class CustomMapper {
 
 	public static Allotment dtoToAllotments(AllotmentsDto dto, Allotment allotment) {
-		allotment.setEmpId(null);
+		
 		allotment.setEmpId(dto.getEmpId());
 		allotment.setStatus(AllotmentStatus.Pending.name());
 		allotment.setDate(LocalDate.now());
